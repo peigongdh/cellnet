@@ -1,10 +1,11 @@
 package tests
 
 import (
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
 	"sync"
 	"testing"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
 )
 
 func TestContextSet(t *testing.T) {

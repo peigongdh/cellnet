@@ -2,6 +2,7 @@ package udp
 
 import (
 	"encoding/binary"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 	"github.com/davyxu/cellnet/peer/udp"

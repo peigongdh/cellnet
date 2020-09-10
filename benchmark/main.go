@@ -3,6 +3,14 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
+	"os"
+	"reflect"
+	"runtime/pprof"
+	"time"
+
+	"github.com/davyxu/golog"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 	_ "github.com/davyxu/cellnet/codec/json"
@@ -11,12 +19,6 @@ import (
 	"github.com/davyxu/cellnet/proc"
 	_ "github.com/davyxu/cellnet/proc/tcp"
 	"github.com/davyxu/cellnet/util"
-	"github.com/davyxu/golog"
-	"log"
-	"os"
-	"reflect"
-	"runtime/pprof"
-	"time"
 )
 
 func server() {

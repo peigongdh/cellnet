@@ -2,12 +2,13 @@ package tests
 
 import (
 	"fmt"
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
-	"github.com/davyxu/cellnet/proc"
 	"sync"
 	"testing"
 	"time"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
+	"github.com/davyxu/cellnet/proc"
 )
 
 const recreateConn_Address = "127.0.0.1:7201"

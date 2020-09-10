@@ -3,12 +3,14 @@
 package rpc
 
 import (
+	"reflect"
+	"unsafe"
+
 	"github.com/davyxu/protoplus/proto"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 	_ "github.com/davyxu/cellnet/codec/protoplus"
-	"reflect"
-	"unsafe"
 )
 
 var (

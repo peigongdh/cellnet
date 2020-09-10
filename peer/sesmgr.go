@@ -1,9 +1,10 @@
 package peer
 
 import (
-	"github.com/davyxu/cellnet"
 	"sync"
 	"sync/atomic"
+
+	"github.com/davyxu/cellnet"
 )
 
 // 完整功能的会话管理

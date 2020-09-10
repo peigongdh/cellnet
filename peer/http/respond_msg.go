@@ -3,12 +3,13 @@ package http
 import (
 	"errors"
 	"fmt"
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/codec"
-	_ "github.com/davyxu/cellnet/codec/httpjson"
 	"io"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/codec"
+	_ "github.com/davyxu/cellnet/codec/httpjson"
 )
 
 type MessageRespond struct {

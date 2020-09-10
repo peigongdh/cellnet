@@ -2,10 +2,11 @@ package http
 
 import (
 	"errors"
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
 	"html/template"
 	"net/http"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
 )
 
 type RequestMatcher interface {

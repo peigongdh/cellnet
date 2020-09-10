@@ -1,10 +1,11 @@
 package test
 
 import (
-	"github.com/davyxu/cellnet/codec"
-	_ "github.com/davyxu/cellnet/codec/gogopb"
 	"reflect"
 	"testing"
+
+	"github.com/davyxu/cellnet/codec"
+	_ "github.com/davyxu/cellnet/codec/gogopb"
 )
 
 func TestGogopbCodec_Codec(t *testing.T) {

@@ -2,6 +2,7 @@ package rpc
 
 import (
 	"errors"
+
 	"github.com/davyxu/cellnet"
 )
 

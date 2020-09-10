@@ -2,14 +2,15 @@ package tests
 
 import (
 	"fmt"
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
-	httppeer "github.com/davyxu/cellnet/peer/http"
-	"github.com/davyxu/cellnet/proc"
 	"io/ioutil"
 	"net/http"
 	"testing"
 	"time"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
+	httppeer "github.com/davyxu/cellnet/peer/http"
+	"github.com/davyxu/cellnet/proc"
 )
 
 const pageAddress = "127.0.0.1:10087"

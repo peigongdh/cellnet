@@ -2,8 +2,9 @@ package peer
 
 import (
 	"fmt"
-	"github.com/davyxu/cellnet"
 	"sort"
+
+	"github.com/davyxu/cellnet"
 )
 
 type PeerCreateFunc func() cellnet.Peer

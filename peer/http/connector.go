@@ -2,12 +2,13 @@ package http
 
 import (
 	"fmt"
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/codec"
-	"github.com/davyxu/cellnet/peer"
 	"io"
 	"net/http"
 	"reflect"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/codec"
+	"github.com/davyxu/cellnet/peer"
 )
 
 type httpConnector struct {

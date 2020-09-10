@@ -1,13 +1,14 @@
 package tcp
 
 import (
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
-	"github.com/davyxu/cellnet/util"
 	"net"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
+	"github.com/davyxu/cellnet/util"
 )
 
 // Socket会话

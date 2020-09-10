@@ -1,12 +1,13 @@
 package tcp
 
 import (
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
-	"github.com/davyxu/cellnet/util"
 	"net"
 	"strings"
 	"time"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
+	"github.com/davyxu/cellnet/util"
 )
 
 // 接受器
@@ -93,9 +94,9 @@ func (self *tcpAcceptor) accept() {
 			// 处理连接进入独立线程, 防止accept无法响应
 			go self.onNewSession(conn)
 
-		}else{
+		} else {
 
-			if nerr, ok := err.(net.Error); ok && nerr.Temporary(){
+			if nerr, ok := err.(net.Error); ok && nerr.Temporary() {
 				time.Sleep(time.Millisecond)
 				continue
 			}

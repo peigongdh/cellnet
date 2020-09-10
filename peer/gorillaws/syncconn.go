@@ -1,13 +1,15 @@
 package gorillaws
 
 import (
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
-	"github.com/gorilla/websocket"
 	"net"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/gorilla/websocket"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
 )
 
 type wsSyncConnector struct {

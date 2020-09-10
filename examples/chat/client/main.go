@@ -2,13 +2,15 @@ package main
 
 import (
 	"bufio"
+	"os"
+	"strings"
+
+	"github.com/davyxu/golog"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/examples/chat/proto"
 	"github.com/davyxu/cellnet/peer"
 	"github.com/davyxu/cellnet/proc"
-	"github.com/davyxu/golog"
-	"os"
-	"strings"
 
 	_ "github.com/davyxu/cellnet/peer/tcp"
 	_ "github.com/davyxu/cellnet/proc/tcp"

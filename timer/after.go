@@ -1,8 +1,9 @@
 package timer
 
 import (
-	"github.com/davyxu/cellnet"
 	"time"
+
+	"github.com/davyxu/cellnet"
 )
 
 type AfterStopper interface {

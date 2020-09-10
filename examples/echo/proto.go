@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"reflect"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 	"github.com/davyxu/cellnet/util"
-	"reflect"
 )
 
 type TestEchoACK struct {

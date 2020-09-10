@@ -1,10 +1,11 @@
 package tcp
 
 import (
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/util"
 	"io"
 	"net"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/util"
 )
 
 type TCPMessageTransmitter struct {

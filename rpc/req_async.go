@@ -1,8 +1,9 @@
 package rpc
 
 import (
-	"github.com/davyxu/cellnet"
 	"time"
+
+	"github.com/davyxu/cellnet"
 )
 
 // 异步RPC请求

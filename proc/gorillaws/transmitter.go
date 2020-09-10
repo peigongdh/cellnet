@@ -2,10 +2,12 @@ package gorillaws
 
 import (
 	"encoding/binary"
+
+	"github.com/gorilla/websocket"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 	"github.com/davyxu/cellnet/util"
-	"github.com/gorilla/websocket"
 )
 
 const (

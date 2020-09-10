@@ -8,11 +8,12 @@ import (
 	"reflect"
 	"time"
 
+	"github.com/davyxu/golog"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 	"github.com/davyxu/cellnet/peer"
 	"github.com/davyxu/cellnet/proc"
-	"github.com/davyxu/golog"
 
 	_ "github.com/davyxu/cellnet/codec/json"
 	_ "github.com/davyxu/cellnet/peer/gorillaws"

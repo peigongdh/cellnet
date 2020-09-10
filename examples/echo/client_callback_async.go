@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
 	"github.com/davyxu/cellnet/proc"
@@ -25,7 +26,7 @@ func clientAsyncCallback() {
 				Msg:   "hello",
 				Value: 1234,
 			})
-		case *TestEchoACK: //收到服务器发送的消息
+		case *TestEchoACK: // 收到服务器发送的消息
 
 			fmt.Printf("clientAsyncCallback recv %+v\n", msg)
 

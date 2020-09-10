@@ -1,11 +1,12 @@
 package udp
 
 import (
+	"net"
+	"time"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
 	"github.com/davyxu/cellnet/util"
-	"net"
-	"time"
 )
 
 const MaxUDPRecvBuffer = 2048

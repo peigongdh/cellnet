@@ -1,12 +1,14 @@
 package db
 
 import (
+	"testing"
+	"time"
+
+	"github.com/mediocregopher/radix.v2/redis"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
 	_ "github.com/davyxu/cellnet/peer/redix"
-	"github.com/mediocregopher/radix.v2/redis"
-	"testing"
-	"time"
 )
 
 func prepareOperator(t *testing.T) cellnet.RedisPoolOperator {

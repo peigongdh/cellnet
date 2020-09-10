@@ -2,6 +2,7 @@ package peer
 
 import (
 	"errors"
+
 	"github.com/davyxu/cellnet"
 )
 

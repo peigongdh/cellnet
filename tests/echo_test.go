@@ -2,6 +2,9 @@ package tests
 
 import (
 	"fmt"
+	"testing"
+	"time"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
 	_ "github.com/davyxu/cellnet/peer/gorillaws"
@@ -11,8 +14,6 @@ import (
 	_ "github.com/davyxu/cellnet/proc/gorillaws"
 	_ "github.com/davyxu/cellnet/proc/tcp"
 	_ "github.com/davyxu/cellnet/proc/udp"
-	"testing"
-	"time"
 )
 
 type echoContext struct {

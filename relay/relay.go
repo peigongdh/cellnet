@@ -2,6 +2,7 @@ package relay
 
 import (
 	"errors"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 )

@@ -2,11 +2,13 @@ package mysql
 
 import (
 	"database/sql"
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
-	"github.com/go-sql-driver/mysql"
 	"sync"
 	"time"
+
+	"github.com/go-sql-driver/mysql"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
 )
 
 type mysqlConnector struct {

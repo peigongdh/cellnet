@@ -1,9 +1,10 @@
 package udp
 
 import (
+	"net"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
-	"net"
 )
 
 type udpConnector struct {

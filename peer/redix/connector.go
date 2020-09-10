@@ -1,12 +1,14 @@
 package redix
 
 import (
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
-	"github.com/mediocregopher/radix.v2/pool"
-	"github.com/mediocregopher/radix.v2/redis"
 	"sync"
 	"time"
+
+	"github.com/mediocregopher/radix.v2/pool"
+	"github.com/mediocregopher/radix.v2/redis"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
 )
 
 type redisConnector struct {

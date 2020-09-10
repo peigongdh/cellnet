@@ -15,7 +15,7 @@
         let ws = new WebSocket("ws://127.0.0.1:18802/echo");
         ws.binaryType = "arraybuffer";
 
-        ws.onopen = function(evt) {
+        ws.onopen = function (evt) {
             console.log("Connection open ...");
 
             let msgBody = {
@@ -29,29 +29,29 @@
             let msgData = JSON.stringify(msgBody)
 
             let encoder = new TextEncoder('utf8')
-            let jsonBody= encoder.encode( msgData)
+            let jsonBody = encoder.encode(msgData)
 
             // TODO 实现消息ID与消息体绑定
             let msgid = 1234
 
-            let pkt = new ArrayBuffer( 2+ jsonBody.length)
+            let pkt = new ArrayBuffer(2 + jsonBody.length)
             let dv = new DataView(pkt)
 
             // 写入消息号
             dv.setUint16(0, msgid, true)
 
             // 这里body使用的是Json编码
-            for(let i = 0;i <jsonBody.length;i++){
-                dv.setUint8(2+i, jsonBody[i])
+            for (let i = 0; i < jsonBody.length; i++) {
+                dv.setUint8(2 + i, jsonBody[i])
             }
 
             // 发送
             ws.send(pkt);
         };
 
-        ws.onmessage = function(evt) {
+        ws.onmessage = function (evt) {
 
-            if (evt.data instanceof ArrayBuffer ){
+            if (evt.data instanceof ArrayBuffer) {
 
                 let dv = new DataView(evt.data);
 
@@ -67,16 +67,16 @@
                 // 解码包体
                 let msg = JSON.parse(jsonBody)
 
-                console.log( "Received Message: " , msg);
+                console.log("Received Message: ", msg);
 
 
-            }else{
+            } else {
                 console.log("Require array buffer format")
             }
 
         };
 
-        ws.onclose = function(evt) {
+        ws.onclose = function (evt) {
             console.log("Connection closed.");
         };
     }

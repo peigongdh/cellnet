@@ -3,9 +3,10 @@ package util
 import (
 	"encoding/binary"
 	"errors"
+	"io"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
-	"io"
 )
 
 var (

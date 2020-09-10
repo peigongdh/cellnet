@@ -2,14 +2,15 @@ package http
 
 import (
 	"errors"
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/peer"
-	"github.com/davyxu/cellnet/util"
 	"html/template"
 	"net"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/peer"
+	"github.com/davyxu/cellnet/util"
 )
 
 type httpAcceptor struct {

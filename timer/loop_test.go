@@ -2,9 +2,10 @@ package timer
 
 import (
 	"fmt"
-	"github.com/davyxu/cellnet"
 	"testing"
 	"time"
+
+	"github.com/davyxu/cellnet"
 )
 
 func TestLoopPanic(t *testing.T) {

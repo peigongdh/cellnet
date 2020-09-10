@@ -3,10 +3,11 @@ package db
 import (
 	"database/sql"
 	"fmt"
+	"testing"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
 	"github.com/davyxu/cellnet/peer/mysql"
-	"testing"
 )
 
 func TestMySQL(t *testing.T) {

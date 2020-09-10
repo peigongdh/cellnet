@@ -2,8 +2,9 @@ package msglog
 
 import (
 	"errors"
-	"github.com/davyxu/cellnet"
 	"sync"
+
+	"github.com/davyxu/cellnet"
 )
 
 var (

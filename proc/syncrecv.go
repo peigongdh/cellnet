@@ -1,9 +1,10 @@
 package proc
 
 import (
-	"github.com/davyxu/cellnet"
 	"reflect"
 	"sync"
+
+	"github.com/davyxu/cellnet"
 )
 
 // 同步接收消息器, 可选件，可作为流程测试辅助工具

@@ -1,13 +1,14 @@
 package httpform
 
 import (
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/codec"
 	"net/http"
 	"net/url"
 	"reflect"
 	"strconv"
 	"strings"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/codec"
 )
 
 type httpFormCodec struct {

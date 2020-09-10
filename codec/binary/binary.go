@@ -1,9 +1,10 @@
 package binary
 
 import (
+	"github.com/davyxu/goobjfmt"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
-	"github.com/davyxu/goobjfmt"
 )
 
 type binaryCodec struct {

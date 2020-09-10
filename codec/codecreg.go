@@ -2,6 +2,7 @@ package codec
 
 import (
 	"fmt"
+
 	"github.com/davyxu/cellnet"
 )
 

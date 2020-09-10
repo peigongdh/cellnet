@@ -1,10 +1,11 @@
 package rpc
 
 import (
-	"github.com/davyxu/cellnet"
 	"reflect"
 	"sync"
 	"time"
+
+	"github.com/davyxu/cellnet"
 )
 
 func CallType(sesOrPeer interface{}, reqMsg interface{}, timeout time.Duration, userCallback interface{}) {

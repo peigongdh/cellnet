@@ -22,8 +22,8 @@ func (self *httpAcceptor) GetDir() http.Dir {
 		return http.Dir(filepath.Join(self.httpRoot, self.httpDir))
 	}
 
-	//workDir, _ := os.Getwd()
-	//log.Debugf("Http serve file: %s (%s)", self.dir, workDir)
+	// workDir, _ := os.Getwd()
+	// log.Debugf("Http serve file: %s (%s)", self.dir, workDir)
 }
 
 func (self *httpAcceptor) ServeFile(res http.ResponseWriter, req *http.Request, dir http.Dir) (error, bool) {

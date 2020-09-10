@@ -1,9 +1,10 @@
 package protoplus
 
 import (
+	"github.com/davyxu/protoplus/proto"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
-	"github.com/davyxu/protoplus/proto"
 )
 
 type protoplus struct {

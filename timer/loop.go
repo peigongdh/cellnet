@@ -1,9 +1,10 @@
 package timer
 
 import (
-	"github.com/davyxu/cellnet"
 	"sync/atomic"
 	"time"
+
+	"github.com/davyxu/cellnet"
 )
 
 // 轻量级的持续Tick循环

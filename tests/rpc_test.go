@@ -1,13 +1,14 @@
 package tests
 
 import (
+	"testing"
+	"time"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
 	"github.com/davyxu/cellnet/proc"
 	"github.com/davyxu/cellnet/proc/tcp"
 	"github.com/davyxu/cellnet/rpc"
-	"testing"
-	"time"
 )
 
 const syncRPC_Address = "127.0.0.1:9201"

@@ -1,11 +1,13 @@
 package gorillaws
 
 import (
+	"sync"
+
+	"github.com/gorilla/websocket"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
 	"github.com/davyxu/cellnet/util"
-	"github.com/gorilla/websocket"
-	"sync"
 )
 
 // Socket会话

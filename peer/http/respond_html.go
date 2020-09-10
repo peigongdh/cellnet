@@ -2,13 +2,14 @@ package http
 
 import (
 	"bytes"
-	"github.com/davyxu/cellnet"
 	"html/template"
 	"io"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/davyxu/cellnet"
 )
 
 func getExt(s string) string {
@@ -50,7 +51,7 @@ func (self *httpAcceptor) Compile() *template.Template {
 
 	t.Delims(self.delimsLeft, self.delimsRight)
 	// parse an initial template in case we don't have any
-	//template.Must(t.Parse("Martini"))
+	// template.Must(t.Parse("Martini"))
 
 	filepath.Walk(self.templateDir, func(path string, info os.FileInfo, err error) error {
 		r, err := filepath.Rel(self.templateDir, path)

@@ -3,10 +3,11 @@ package util
 import (
 	"errors"
 	"fmt"
-	"github.com/davyxu/cellnet"
 	"net"
 	"strconv"
 	"strings"
+
+	"github.com/davyxu/cellnet"
 )
 
 // 将普通地址格式(host:port)拆分

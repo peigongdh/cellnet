@@ -3,11 +3,12 @@ package httpjson
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/codec"
 	"io"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/codec"
 )
 
 type httpjsonCodec struct {

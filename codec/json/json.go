@@ -2,6 +2,7 @@ package json
 
 import (
 	"encoding/json"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 )
